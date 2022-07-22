@@ -33,7 +33,15 @@ body {
     flex-direction: column;
 }
 
+.relogio div span {
+    width: 140px;
+    height: 140px;
+}
+
 .relogio div .horas, .minutos, .segundos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 64px;
     font-weight: bold;
     padding: 30px;
@@ -45,9 +53,14 @@ body {
 
 @media (max-width: 576px) {
     .relogio {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
+        width: 370px;
+    }
+    .relogio div span {
+        width: 100px;
+        height: 100px;
+    }
+    .relogio div .horas, .minutos, .segundos {
+        font-weight: 200;
+        padding: 18px;
     }
 }
